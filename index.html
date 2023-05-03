@@ -1,1 +1,136 @@
-Hello world check out my homepage!
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Portfolio - Joe Doe</title>
+	<style>
+		body {
+			background-image: url("background.jpg");
+			background-size: cover;
+			color: white;
+			font-family: monospace;
+			font-size: 18px;
+
+		}
+
+		
+		.container {
+			margin: 0 auto;
+			max-width: 800px;
+			padding: 20px;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+		
+		.header {
+			font-size: 36px;
+			margin-top: 30px;
+			margin-bottom: 20px;
+			text-align: left;
+		}
+		
+		.description {
+			font-size: 19px;
+			margin-bottom: 40px;
+			text-align: justify;
+			display: flex;
+			justify-content: space-between;
+			padding: 22px 0;
+			margin-bottom: 10px;
+		}
+
+		.description p {
+			padding-right: 20px;
+			padding-left: 20px;
+		}
+		
+		.projects {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			margin-top: 20px;
+			text-align: center;
+		}
+		
+		.project {
+			flex-basis: 300px;
+			margin: 20px;
+			background-color: rgba(255, 255, 255, 0.5);
+  			border-radius: 10px;
+			color: black;
+		}
+		
+		.project img {
+			width: 100%;
+		}
+		
+		.project h3 {
+			margin-top: 10px;
+			margin-bottom: 5px;
+		}
+		
+		.project p {
+			margin-top: 0;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<header>
+			<h1 class="header">Joe Doe</h1>
+			<div class="description">
+				<div class="description-left">
+					<p>
+						My name is Joe Doe, I am passionate about computer science, especially Data Science and Deep Learning. I am a motivated and challenge-loving person.
+					</p>
+				</div>
+				<div class="description-right">
+					<p>
+						Je m'appelle Joe Doe, je suis passionné d'informatique, en particulier de Data Science et de Deep Learning. Je suis une personne motivée et avide de défis.
+					</p>
+				</div>
+			</div>
+		</header>
+
+		<section>
+			<p><img src="https://img.shields.io/badge/Code-Python-green"> <img src="https://img.shields.io/badge/Code-SQL-green"> <img src="https://img.shields.io/badge/Tools-Pandas-orange"> <img src="https://img.shields.io/badge/Tools-NumPy-orange"> <img src="https://img.shields.io/badge/Tools-Seaborn-orange"> <img src="https://img.shields.io/badge/Tools-Matplotlib-orange"> <img src="https://img.shields.io/badge/Tools-Docker-blue"></p>
+		</section>
+		<section>
+
+			<h2>Projects:</h2>
+			<div class="projects">
+				<div class="project">
+					<img src="https://i0.wp.com/cmdlinetips.com/wp-content/uploads/2019/04/Scatter_Plot_transparent_with_log_scale_Seaborn_Python.jpeg" alt="Project 1">
+					<h3>Project 1</h3>
+					<p>testowy opis pierwszego projektu ......</p>
+					<a href="#">Read more</a>
+				</div>
+				<div class="project">
+					<img src="https://i0.wp.com/cmdlinetips.com/wp-content/uploads/2019/04/Scatter_Plot_transparent_with_log_scale_Seaborn_Python.jpeg" alt="Project 2">
+					<h3>Project 2</h3>
+					<p>Description of Project 2</p>
+					<a href="#">Read more</a>
+				</div>
+				<div class="project">
+					<img src="https://i0.wp.com/cmdlinetips.com/wp-content/uploads/2019/04/Scatter_Plot_transparent_with_log_scale_Seaborn_Python.jpeg" alt="Project 3">
+					<h3>Project 3</h3>
+					<p>Description of Project 3</p>
+					<a href="#">Read more</a>
+				</div>
+				<div class="project">
+					<img src="https://i0.wp.com/cmdlinetips.com/wp-content/uploads/2019/04/Scatter_Plot_transparent_with_log_scale_Seaborn_Python.jpeg" alt="Project 3">
+					<h3>Project 3</h3>
+					<p>Description of Project 3</p>
+					<a href="#">Read more</a>
+				</div>
+				<div class="project">
+					<img src="https://i0.wp.com/cmdlinetips.com/wp-content/uploads/2019/04/Scatter_Plot_transparent_with_log_scale_Seaborn_Python.jpeg" alt="Project 3">
+					<h3>Project 3</h3>
+					<p>Description of Project 3</p>
+					<a href="#">Read more</a>
+				</div>
+			</div>
+		</section>
+	</div>
+</body>
