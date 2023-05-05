@@ -30,7 +30,8 @@
 		}
 		
 		a {
-  			color: yellow;
+  			color: orange;
+			text-decoration: none;
 		}
 		
 		.header {
@@ -66,7 +67,8 @@
 		.project {
 			flex-basis: 300px;
 			margin: 20px;
-			background-color: rgba(255, 255, 255, 0.5);
+			padding-bottom: 15px;
+			background-color: rgba(255, 255, 255, 0.7);
   			border-radius: 10px;
 			color: black;
 		}
@@ -77,11 +79,22 @@
 		
 		.project h3 {
 			margin-top: 10px;
-			margin-bottom: 5px;
+			margin-bottom: 10px;
+			font-size: 15px;
+			font-weight: bold;
 		}
+
+		.my-link {
+  			font-weight: bold;
+			text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);
+		}
+
 		
 		.project p {
 			margin-top: 0;
+			font-size: 13px;
+			text-align: justify;
+			margin: 10px;
 		}
 	</style>
 </head>
@@ -111,36 +124,28 @@
 
 			<h2>Projects:</h2>
 			<div class="projects">
+				
 				<div class="project">
-					<img src="https://i0.wp.com/cmdlinetips.com/wp-content/uploads/2019/04/Scatter_Plot_transparent_with_log_scale_Seaborn_Python.jpeg" alt="Project 1">
-					<h3>Project 1</h3>
-					<p>testowy opis pierwszego projektu ......</p>
-					<a href="#">Read more</a>
+					<img src="https://camo.githubusercontent.com/73cbf5e606fcc23005f2d9cc03fb733d21d2671b992c21adede17735eb996624/68747470733a2f2f696d616765732e706578656c732e636f6d2f70686f746f732f33393335312f707572706c652d6772617065732d76696e65796172642d6e6170612d76616c6c65792d6e6170612d76696e65796172642d33393335312e6a7065673f6175746f3d636f6d70726573732663733d74696e797372676226773d3132363026683d373530266470723d32" alt="Project">
+					<h3>Wine quality</h3>
+					<p>I performed EDA on wine data and used Logistic Regression to build a predictive model for wine quality classification. The project involved data cleaning, visualization, and feature selection techniques. The model achieved an accuracy of X% on the test set.</p>
+					<a href="https://github.com/mariuszcha/kaggleNotebooks/blob/main/wine-quality.ipynb" class="my-link">Read more!</a>
 				</div>
+				
 				<div class="project">
-					<img src="https://i0.wp.com/cmdlinetips.com/wp-content/uploads/2019/04/Scatter_Plot_transparent_with_log_scale_Seaborn_Python.jpeg" alt="Project 2">
-					<h3>Project 2</h3>
-					<p>Description of Project 2</p>
-					<a href="#">Read more</a>
+					<img src="https://images.pexels.com/photos/2988232/pexels-photo-2988232.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Project">
+					<h3>Credit card fradulent detection</h3>
+					<p>I developed a Decision Tree Classifier model to predict whether a bank transaction was fraudulent or not. The dataset was highly imbalanced, so I had to use different sampling techniques to balance the classes. The model was trained on the preprocessed data and evaluated using appropriate metrics.</p>
+					<a href="https://github.com/mariuszcha/kaggleNotebooks/blob/main/credit-card-fradulent-detection.ipynb" class="my-link">Read more!</a>
 				</div>
-				<div class="project">
-					<img src="https://i0.wp.com/cmdlinetips.com/wp-content/uploads/2019/04/Scatter_Plot_transparent_with_log_scale_Seaborn_Python.jpeg" alt="Project 3">
-					<h3>Project 3</h3>
-					<p>Description of Project 3</p>
-					<a href="#">Read more</a>
-				</div>
+				
 				<div class="project">
 					<img src="https://i0.wp.com/cmdlinetips.com/wp-content/uploads/2019/04/Scatter_Plot_transparent_with_log_scale_Seaborn_Python.jpeg" alt="Project 3">
 					<h3>Project 3</h3>
 					<p>Description of Project 3</p>
 					<a href="#">Read more</a>
 				</div>
-				<div class="project">
-					<img src="https://i0.wp.com/cmdlinetips.com/wp-content/uploads/2019/04/Scatter_Plot_transparent_with_log_scale_Seaborn_Python.jpeg" alt="Project 3">
-					<h3>Project 3</h3>
-					<p>Description of Project 3</p>
-					<a href="#">Read more</a>
-				</div>
+				
 			</div>
 		</section>
 	</div>
