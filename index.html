@@ -97,6 +97,18 @@
 			margin: 10px;
 		}
 	</style>
+	<script>
+	    function increaseCount() {
+	      if (localStorage.getItem('visitCount')) {
+		var count = parseInt(localStorage.getItem('visitCount'));
+		count++;
+		localStorage.setItem('visitCount', count);
+	      } else {
+		localStorage.setItem('visitCount', 1);
+	      }
+	      document.getElementById('count').textContent = localStorage.getItem('visitCount');
+	    }
+  	</script>
 </head>
 <body>
 	<div class="container">
@@ -184,4 +196,9 @@
 			</div>
 		</section>
 	</div>
+
+	<body onload="increaseCount()">
+	  <span id="count"></span>
+	</body>
+	</html>
 </body>
