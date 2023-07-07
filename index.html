@@ -65,7 +65,7 @@
 		}
 		
 		.project {
-			flex-basis: 300px;
+			flex-basis: calc(33.33% - 40px);
 			margin: 20px;
 			padding-bottom: 15px;
 			background-color: rgba(255, 255, 255, 0.7);
@@ -181,21 +181,21 @@
 				<div class="project">
 					<img src="https://images.pexels.com/photos/2988232/pexels-photo-2988232.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Project">
 					<h3>Credit card fradulent detection</h3>
-					<p>I developed a Decision Tree Classifier model to predict whether a bank transaction was fraudulent or not. The dataset was highly imbalanced, so I had to use different sampling techniques to balance the classes. The model was trained on the preprocessed data and evaluated using appropriate metrics.</p>
+					<p>Detecting whether transaction was fradulent or not in situation of imbalance of data. Learning oversampling and undersampling. I used Decision Tree Classifier</p>
 					<a href="https://github.com/mariuszcha/kaggleNotebooks/blob/main/credit-card-fradulent-detection.ipynb" class="my-link">Read more!</a>
 				</div>
 				
 				<div class="project">
-					<img src="data:image/png;base64,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" alt="Project">
+					<img src="https://images.pexels.com/photos/351264/pexels-photo-351264.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Project">
 					<h3>Santander transaction prediction</h3>
 					<p>The objective of this project is to identify customers who are likely to make a specific transaction in the future, regardless of the amount of money transacted. The provided data has the same structure as the real Santander data available to solve this problem.</p>
 					<a href="https://github.com/mariuszcha/kaggleNotebooks/blob/main/santander-prediction.ipynb" class="my-link">Read more!</a>
 				</div>
 				
 				<div class="project">
-					<img src="https://images.pexels.com/photos/159888/pexels-photo-159888.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Project">
+					<img src="https://images.pexels.com/photos/50987/money-card-business-credit-card-50987.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2	" alt="Project">
 					<h3>Predicting Netflix Stock Movement</h3>
-					<p>We employed PyTorch and a simple LSTM neural network to forecast the movement of stock prices and generate trends over a specific time interval. The LSTM model, being a powerful tool for sequential data analysis, allowed us to capture and learn patterns in the historical stock price data. By training the model on past stock prices, we aimed to predict future price movements and identify potential trends.</p>
+					<p>Predicting future price movements and identify potential trends using simple LSTM model. I used PyTorch as main library to create Neural Network in given situation.</p>
 					<a href="https://github.com/mariuszcha/kaggleNotebooks/blob/main/predicting-netflix-stock-price-using-lstm-pytorch.ipynb" class="my-link">Read more!</a>
 				</div>
 				
@@ -214,16 +214,16 @@
 				</div>
 				
 				<div class="project">
-					<img src="https://images.pexels.com/photos/2618797/pexels-photo-2618797.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Project">
+					<img src="https://images.pexels.com/photos/121598/pexels-photo-121598.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Project">
 					<h3>Titanic - PyTorch, FastAI, Scratch</h3>
-					<p>I tackled the Titanic classification task with PyTorch, FastAI, and a custom-built model, showcasing the power of deep learning techniques in achieving accurate predictions.</p>
+					<p>Tackling the Titanic classification task with PyTorch, FastAI, and a custom-built model, showcasing the power of deep learning techniques in achieving accurate predictions.</p>
 					<a href="https://github.com/mariuszcha/kaggleNotebooks/blob/main/titanic-from-scratch-fastai-pytorch.ipynb" class="my-link">Read more!</a>
 				</div>
 				
 				<div class="project">
-					<img src="https://images.pexels.com/photos/16659535/pexels-photo-16659535/free-photo-of-samochod-pojazd-pospiech-chrome.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Project">
+					<img src="https://images.pexels.com/photos/17451277/pexels-photo-17451277/free-photo-of-droga-ludzie-ulica-przemysl.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Project">
 					<h3>Is Porsche in the image?</h3>
-					<p>I developed a straightforward FastAI model designed to differentiate between images of a Porsche and other car types. Leveraging the power of deep learning and the FastAI library, the model exhibited impressive capabilities in accurately classifying the presence of a Porsche in the given images.</p>
+					<p>Developing a straightforward FastAI model designed to differentiate between images of a Porsche and other car types. Leveraging the power of deep learning and the FastAI library.</p>
 					<a href="https://github.com/mariuszcha/kaggleNotebooks/blob/main/is-it-porsche-or-not.ipynb" class="my-link">Read more!</a>
 				</div>			
 			</div>
