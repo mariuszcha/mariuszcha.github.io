@@ -113,18 +113,6 @@
 			margin: 10px;
 		}
 	</style>
-	<script>
-	    function increaseCount() {
-	      if (localStorage.getItem('visitCount')) {
-		var count = parseInt(localStorage.getItem('visitCount'));
-		count++;
-		localStorage.setItem('visitCount', count);
-	      } else {
-		localStorage.setItem('visitCount', 1);
-	      }
-	      document.getElementById('count').textContent = localStorage.getItem('visitCount');
-	    }
-  	</script>
 </head>
 <body>
 	<div class="container">
@@ -132,29 +120,25 @@
 			<h1 class="header">Mariusz Ch.</h1>
 			<p class="email">email: <a href="mailto:mariusz.cha@proton.me">mariusz.cha@proton.me</a></p>
 			<div class="description">
-				<div class="description-left">
+				
 					<p>
-						I am an aspiring computer scientist with a keen interest in Data Science and Deep Learning, i'm also a creative individual who loves to tackle new challenges and expand my knowledge. My broad range of skills and expertise make me well-equipped to help companies solve complex problems and achieve their goals. With my passion for learning and cutting-edge technologies, I am confident that I can make a valuable contribution to any organization that values innovation and continuous improvement.
+						I am an aspiring computer scientist with a keen interest in Data Science and Deep Learning, i'm also a creative individual who loves to tackle new challenges and expand my knowledge. My broad range of skills and expertise make me well-equipped to help companies solve complex problems and achieve their goals. With my passion for learning and cutting-edge technologies, I am confident that I can make a valuable contribution to any organization that values innovation and continuous improvement. Contact me!
 					</p>
-				</div>
-				<div class="description-right">
-					<p>
-						Je suis un informaticien qui est passionné par Data Science et Deep Learning. J'aime aussi relever de nouveaux défis et apprendre continuellement. J'ai de nombreuses compétences et connaissances qui me permettent d'aider les entreprises à résoudre des problèmes complexes et à atteindre leurs objectifs. Grâce à ma passion pour l'apprentissage et les technologies de pointe, je suis sûr que je peux apporter une contribution précieuse à toute organisation qui valorise l'innovation et l'amélioration continue.
-					</p>
-				</div>
+				
+				
 			</div>
 		</header>
 		
 		<section>
 
-		<h2>Skills:</h2>
+		<h2>Skills / Experience:</h2>
 		Programming languages and libraries:
 		<br><br><img src="https://img.shields.io/badge/Code-Python-green">
 		<img src="https://img.shields.io/badge/Code-SQL(PosgreSQL)-green">
 		<img src="https://img.shields.io/badge/Lib-Pandas-orange">
 		<img src="https://img.shields.io/badge/lib-Sklearn-orange">
 		<img src="https://img.shields.io/badge/Lib-PyTorch-orange">
-		<img src="https://img.shields.io/badge/lib-FastAI-orange">
+		<img src="https://img.shields.io/badge/Lib-Streamlit-orange">
 		<img src="https://img.shields.io/badge/Lib-Matplotlib-orange">
 		<img src="https://img.shields.io/badge/Env-Jupyter-yellow">
 
@@ -167,12 +151,11 @@
 		<br><br><img src="https://img.shields.io/badge/BI-Tableau-yellow">
 		<img src="https://img.shields.io/badge/BI-Spreadsheet-yellow">
 		<img src="https://img.shields.io/badge/BI-Microsoft Office Package-yellow">
-		<img src="https://img.shields.io/badge/BI-ETL-yellow">
 		<img src="https://img.shields.io/badge/OS-Linux-yellow">
-		<img src="https://img.shields.io/badge/Platform-GitHub-yellow">
+		<img src="https://img.shields.io/badge/Control sys.-Git-yellow">
 
-		<br><br>Courses / Education:
-		<br><br><img src="https://img.shields.io/badge/DeepLearning.ai-MachineLearning-pink">
+		<br><br>Courses:
+		<br><br><img src="https://img.shields.io/badge/DeepLearning.ai-Machine Learning Specialization-pink">
 		<img src="https://img.shields.io/badge/DeepLearning.ai-ChatGPT course-pink">
 			
 			<h2>Today I Learned:</h2>
@@ -185,7 +168,7 @@
 
 			<h2>My Tableau Projects:</h2><a href="https://public.tableau.com/app/profile/m.ch4422" class="my-link2">Tableau Vizzes - Click Here</a>
 
-			<h2>ML/AI Projects:</h2>
+			<h2>ML/AI Projects and some DevOps notes:</h2>
 			<div class="projects">
 				
 				<div class="project">
@@ -247,8 +230,6 @@
 		</section>
 	</div>
 
-	<body onload="increaseCount()">
-	  <span id="count"></span>
-	</body>
+	
 	</html>
 </body>
